@@ -6,6 +6,12 @@ const colorBackground = document.getElementById('background-picker')
 toggleThemeBtn.addEventListener('click', function(){
     //alert("me diste click");
     document.body.classList.toggle('dark');
+    if (document.body.classList.contains('dark')) {
+        toggleThemeBtn.textContent = 'Activar Light Mode';
+
+    } else {
+        toggleThemeBtn.textContent = 'Activar Dark Mode'
+    }
 })
 
 colorPicker:addEventListener('change', function() {
@@ -13,5 +19,5 @@ document.body.style.color = colorPicker.value;
 });
 
 colorBackground:addEventListener('change', function() {
-    document.body.style.background = colorBackground.value;
+    document.body.style.backgroundColor = colorBackground.value;
     });
