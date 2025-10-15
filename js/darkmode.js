@@ -10,10 +10,10 @@ toggleTheme()
 function toggleTheme(){
     document.body.classList.toggle('dark');
     if (document.body.classList.contains('dark')) {
-        toggleThemeBtn.textContent = 'Activar Light Mode';
+        toggleThemeBtn.innerHTML = '<i class="fa-solid fa-sun"></i>';
         
     } else {
-        toggleThemeBtn.textContent = 'Activar Dark Mode'
+        toggleThemeBtn.innerHTML = '<i class="fa-solid fa-moon"></i>'
     }
 }
 
