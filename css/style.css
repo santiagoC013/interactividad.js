@@ -28,6 +28,8 @@ section#attract {
 }
 
 button{
+    cursor: pointer;
+    transition: all 1s;
     background-color: var(--dark);
     color: var(--light);
     cursor: pointer;
